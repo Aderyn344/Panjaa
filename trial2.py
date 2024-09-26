@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import joblib
 
 # Load trained models (including preprocessing pipelines)
 binary_classifier = joblib.load('binary_pipeline.joblib')  # Load binary classification model
