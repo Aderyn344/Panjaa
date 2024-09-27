@@ -1,23 +1,18 @@
 import streamlit as st
 import pandas as pd
-import joblib
 # ... other code ...
 
 # Before line 3
-print("Before line 3:")
-print("Variable values:")
-print(some_variables)  # Replace with actual variables you want to check
+print("Before importing joblib:")
+print("Current working directory:", os.getcwd())
+print("Python version:", platform.python_version())
 
-# Line 3 (where the error is occurring)
-result = some_function()  # Replace with your actual code
+# Line 3
+import joblib
 
 # After line 3
-print("After line 3:")
-print("Result:", result)
-print("Other relevant variables:", other_variables)  # Replace with other variables you want to inspect
-
-# ... rest of your code ...
-
+print("joblib imported successfully")
+print("joblib version:", joblib.__version__)
 # Load your pre-trained model pipelines (replace with your actual loading logic)
 binary_pipeline = ...  # Load the binary classification pipeline
 stage_pipeline = ...  # Load the multi-class classification pipeline
