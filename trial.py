@@ -2,6 +2,25 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+import joblib
+
+# ... other code ...
+
+# Before line 3
+print("Before line 3:")
+print("Variable values:")
+print(some_variables)  # Replace with actual variables you want to check
+
+# Line 3 (where the error is occurring)
+result = some_function()  # Replace with your actual code
+
+# After line 3
+print("After line 3:")
+print("Result:", result)
+print("Other relevant variables:", other_variables)  # Replace with other variables you want to inspect
+
+# ... rest of your code ...
+
 # Load your pre-trained model pipelines (replace with your actual loading logic)
 binary_pipeline = ...  # Load the binary classification pipeline
 stage_pipeline = ...  # Load the multi-class classification pipeline
