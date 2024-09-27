@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 # ... other code ...
 
-# Before line 3
+# Before importing joblib (potentially indented 4 spaces)
 print("Before importing joblib:")
 print("Current working directory:", os.getcwd())
 print("Python version:", platform.python_version())
